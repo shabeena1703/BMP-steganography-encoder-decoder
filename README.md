@@ -1,6 +1,5 @@
 Steganography in C using LSB Technique
 -----------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------------------
 📝 Brief Summary
 -----------------------------------------------------------------------------------------------------------------------------------------
 This project hides a secret file inside a 24‑bit BMP image using the Least Significant Bit (LSB) technique.
@@ -44,8 +43,9 @@ Sending sensitive information online is risky.
 Encryption protects the data, but it also reveals that something secret is being sent.
 
 Steganography solves this problem by hiding the data inside an image, so no one even knows something confidential is present.
------------------------------------------------------------------------------------------------------------------------------------------
+
 📂 Datasets Used
+-----------------------------------------------------------------------------------------------------------------------------------------
 No external datasets are required.
 
 This project uses:
@@ -86,6 +86,7 @@ Modular Programming
 🔧 Methods 
 -----------------------------------------------------------------------------------------------------------------------------------------
 🔐 Encoding Process (Hiding Data)
+-----------------------------------------------------------------------------------------------------------------------------------------
 
 Read the BMP image
 
@@ -108,7 +109,7 @@ Replace the least significant bit of each image byte with secret bits
 Save the modified image as a new BMP file
 
 🔍 Decoding Process (Extracting Data)
-
+-----------------------------------------------------------------------------------------------------------------------------------------
 Read the encoded BMP image
 
 Check the magic string to confirm hidden data exists
@@ -138,6 +139,7 @@ Strengthened debugging and command‑line skills
 📦 Output
 -----------------------------------------------------------------------------------------------------------------------------------------
 🔐 Encoding
+-----------------------------------------------------------------------------------------------------------------------------------------
 Code
 $ ./a.out -e beautiful.bmp secret.txt output.bmp
 
@@ -146,12 +148,15 @@ Encoding Successful!
 Output File:
 output.bmp
 🔍 Decoding
+-----------------------------------------------------------------------------------------------------------------------------------------
 Code
+
 $ ./a.out -d output.bmp decode_secret.txt
 
 Decoding Successful!
 
 Recovered Secret Message:
+
 My password is Secret ;)
 
 🚀 How to Run This Project
@@ -159,26 +164,33 @@ My password is Secret ;)
 Clone Repository
 
 Code
+
 git clone https://github.com/yourusername/steganography.git
 
 Navigate to Project Folder
+
 Code
+
 cd steganography
 
 Compile
+
 Code
 gcc *.c -o steganography
 
 or
 
 Code
+
 make
 
 Encode
+-----------------------------------------------------------------------------------------------------------------------------------------
 Code
 ./steganography -e input.bmp secret.txt output.bmp
 
 Decode
+-----------------------------------------------------------------------------------------------------------------------------------------
 Code
 ./steganography -d output.bmp recovered.txt
 
