@@ -1,10 +1,9 @@
 📘 Steganography in C using LSB Technique
-------------------------------------------------------------------------------------------------------------------------------------------
 📝 Brief Summary
 Steganography is the practice of hiding confidential information inside digital media without revealing its existence.
 This project hides a secret file inside a 24‑bit BMP image using the Least Significant Bit (LSB) technique.
 The hidden message can be extracted later without any visible change in the image.
------------------------------------------------------------------------------------------------------------------------------------------
+
 📘 Overview
 The objective of this project is to securely hide text or small files inside bitmap images while keeping the image visually unchanged.
 Unlike encryption, which makes data unreadable, steganography hides the existence of the message itself.
@@ -26,7 +25,7 @@ Encryption protects the content but also signals that confidential information e
 The challenge is to hide the existence of the data itself.
 
 This project solves that problem by embedding secret text into the least significant bits of image pixels, making the modifications invisible to the human eye.
-------------------------------------------------------------------------------------------------------------------------------------------
+
 📁 Datasets
 No external datasets are required.
 
@@ -39,7 +38,7 @@ Secret text file
 Encoded BMP image
 
 Decoded output file
-------------------------------------------------------------------------------------------------------------------------------------------
+
 🛠️ Tools and Technologies Used
 Programming Language
 C
@@ -73,7 +72,7 @@ Least Significant Bit (LSB) Technique
 Modular Programming
 
 Command‑Line Programming
-------------------------------------------------------------------------------------------------------------------------------------------
+
 🧩 Methods (How the Project Works)
 Encoding Process
 Read the cover BMP image
@@ -106,7 +105,7 @@ Extract the secret file size
 Extract the secret data bit‑by‑bit
 
 Reconstruct the original file
-------------------------------------------------------------------------------------------------------------------------------------------
+
 💡 Key Insights
 Learned BMP image structure
 
@@ -119,9 +118,8 @@ Explored information hiding techniques
 Practiced modular programming
 
 Strengthened debugging skills
-------------------------------------------------------------------------------------------------------------------------------------------
+
 📦 Output
-------------------------------------------------------------------------------------------------------------------------------------------
 Encoding
 Code
 $ ./a.out -e beautiful.bmp secret.txt output.bmp
@@ -158,11 +156,11 @@ Code
 Decode
 Code
 ./steganography -d output.bmp recovered.txt
-------------------------------------------------------------------------------------------------------------------------------------------
+
 🧪 Result and Conclusion
 The project successfully hides confidential text inside a BMP image while preserving the visual quality of the image.
 The hidden data can be extracted accurately, proving the effectiveness of the LSB steganography technique.
-------------------------------------------------------------------------------------------------------------------------------------------
+
 🔮 Future Work
 Support PNG and JPEG formats
 
@@ -177,7 +175,6 @@ Develop a GUI
 Improve embedding capacity
 
 Optimize for larger files
-------------------------------------------------------------------------------------------------------------------------------------------
 👤 Author
 Shaik Shabeena  
 Electronics and Communication Engineering
