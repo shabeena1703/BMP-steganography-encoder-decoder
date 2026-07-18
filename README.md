@@ -169,6 +169,7 @@ Decoding Successful!
 Recovered Secret Message:
 
 My password is Secret ;)
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🚀 How to Run This Project
@@ -177,7 +178,7 @@ Clone Repository
 -----------------------------------------------------------------------------------------------------------------------------------------
 Code
 
-git clone https://github.com/yourusername/steganography.git
+git clone https\://github.com/yourusername/steganography.git
 
 Navigate to Project Folder
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -207,6 +208,7 @@ Decode
 -----------------------------------------------------------------------------------------------------------------------------------------
 Code
 ./steganography -d output.bmp recovered.txt
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🧪 Result and Conclusion
@@ -233,17 +235,11 @@ Optimize for larger files
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------
-👤 Author
+👤 Author & Contact
 -----------------------------------------------------------------------------------------------------------------------------------------
 Shaik Shabeena  
 Electronics and Communication Engineering
+Email: shaikshabeena@gmail.com
+Linkedin: https://www.linkedin.com/in/shaik-shabeena-36a7b9332/
 
-I enjoy working on low‑level and system‑focused projects where I can understand how things work internally — from bits and bytes to complete embedded systems.
-I like building practical projects that involve real‑time logic, binary data handling, and problem‑solving at the system level.
-
-Interests
-Embedded Systems – microcontrollers, firmware, hardware‑software interaction
-
-C Programming – pointers, memory management, data structures, system‑level coding
-
-Image Processing – understanding how images are stored and manipulated at pixel level
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
