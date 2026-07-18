@@ -149,7 +149,6 @@ Strengthened debugging and command‑line skills
 🔐 Encoding
 -----------------------------------------------------------------------------------------------------------------------------------------
 Code
-
 $ ./a.out -e beautiful.bmp secret.txt output.bmp
 
 Encoding Successful!
@@ -161,7 +160,6 @@ output.bmp
 🔍 Decoding
 -----------------------------------------------------------------------------------------------------------------------------------------
 Code
-
 $ ./a.out -d output.bmp decode_secret.txt
 
 Decoding Successful!
@@ -177,14 +175,12 @@ My password is Secret ;)
 Clone Repository
 -----------------------------------------------------------------------------------------------------------------------------------------
 Code
-
 git clone https\://github.com/yourusername/steganography.git
 
 Navigate to Project Folder
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 Code
-
 cd steganography
 
 Compile
@@ -196,7 +192,6 @@ gcc *.c -o steganography
 or
 
 Code
-
 make
 
 Encode
@@ -238,8 +233,11 @@ Optimize for larger files
 👤 Author & Contact
 -----------------------------------------------------------------------------------------------------------------------------------------
 Shaik Shabeena  
+
 Electronics and Communication Engineering
+
 Email: skshabeena33@gmail.com
+
 Linkedin: https://www.linkedin.com/in/shaik-shabeena-36a7b9332/
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
