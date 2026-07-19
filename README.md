@@ -70,31 +70,31 @@ This project uses:
 -----------------------------------------------------------------------------------------------------------------------------------------
 -> Programming Language
 
-     C
+   C
 
 -> Operating System
 
-     Linux (Ubuntu)
+   Linux (Ubuntu)
 
 -> Compiler
 
-     GCC
+   GCC
 
 -> Development Tools
 
-     VS Code / Vim
+   VS Code / Vim
 
-     Git & GitHub
+   Git & GitHub
 
 -> Concepts Used
 
-     File Handling
+   File Handling
      
-     Bitwise Operations
+   Bitwise Operations
      
-     BMP Image Processing
+   BMP Image Processing
      
-     Modular Programming
+   Modular Programming
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🔧 Methods 
@@ -110,11 +110,11 @@ This project uses:
 
 -> Embed metadata:
 
-     Magic string (#*)
+   Magic string (#*)
 
-     Secret file extension
+   Secret file extension
 
-     Secret file size
+   Secret file size
 
 -> Convert secret data into bits
 
@@ -158,7 +158,7 @@ This project uses:
 -----------------------------------------------------------------------------------------------------------------------------------------
 **Code**
 
-$ ./a.out -e beautiful.bmp secret.txt output.bmp
+     $ ./a.out -e beautiful.bmp secret.txt output.bmp
 
 Encoding Successful!
 
@@ -170,7 +170,7 @@ output.bmp
 -----------------------------------------------------------------------------------------------------------------------------------------
 **Code**
 
-$ ./a.out -d output.bmp decode_secret.txt
+     $ ./a.out -d output.bmp decode_secret.txt
 
 Decoding Successful!
 
@@ -186,28 +186,29 @@ Clone Repository
 ----------------------------------------------------------------------------------------------------------------------------------------
 **Code**
 
-git clone https://github.com/yourusername/steganography.git
+     git clone https://github.com/yourusername/steganography.git
 
 Navigate to Project Folder
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 **Code**
 
-cd steganography
+     cd steganography
 
 Compile
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 **Code**
 
-gcc *.c -o steganography
+     gcc *.c -o steganography
 
 or
 
 **Code**
 
-git clone https://github.com/yourusername/steganography.git
+     make
 
+Encode
 -----------------------------------------------------------------------------------------------------------------------------------------
 **Code**
 
@@ -217,7 +218,7 @@ Decode
 -----------------------------------------------------------------------------------------------------------------------------------------
 **Code**
 
-./steganography -d output.bmp recovered.txt
+     ./steganography -d output.bmp recovered.txt
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
