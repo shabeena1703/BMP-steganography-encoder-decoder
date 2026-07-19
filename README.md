@@ -19,11 +19,11 @@ Steganography is a method of hiding information inside another file so that no o
 
 In this project:
 
-The cover image is a BMP file
+-> The cover image is a BMP file
 
-The secret file can be any small file (text, C program, etc.)
+-> The secret file can be any small file (text, C program, etc.)
 
-The output image is a BMP file that contains the hidden data
+->The output image is a BMP file that contains the hidden data
 
 The idea is simple:
 We take each byte of the image and replace its last bit with the bits of the secret file.
@@ -31,13 +31,13 @@ This tiny change does not affect the image visually, but it stores the hidden da
 
 This project helped me understand:
 
-How BMP images are structured
+-> How BMP images are structured
 
-How binary files work
+-> How binary files work
 
-How bitwise operations store data inside pixels
+-> How bitwise operations store data inside pixels
 
-How to design modular C programs
+-> How to design modular C programs
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🎯 Problem Statement
@@ -54,39 +54,36 @@ No external datasets are required.
 
 This project uses:
 
-A 24‑bit BMP image (cover image)
+-> A 24‑bit BMP image (cover image)
 
-A secret file (text or any small file)
+-> A secret file (text or any small file)
 
-An encoded BMP image (after hiding the data)
+->  encoded BMP image (after hiding the data)
 
-A decoded output file (after extraction)
+-> A decoded output file (after extraction)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🛠️ Tools and Technologies Used
 -----------------------------------------------------------------------------------------------------------------------------------------
-Programming Language
-C
+-> Programming Language
+     C
 
-Operating System
-Linux (Ubuntu)
+-> Operating System
+     Linux (Ubuntu)
 
-Compiler
-GCC
+-> Compiler
+     GCC
 
-Development Tools
-VS Code / Vim
+-> Development Tools
+     VS Code / Vim
 
-Git & GitHub
+     Git & GitHub
 
-Concepts Used
-File Handling
-
-Bitwise Operations
-
-BMP Image Processing
-
-Modular Programming
+-> Concepts Used
+     File Handling
+     Bitwise Operations
+     BMP Image Processing
+     Modular Programming
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🔧 Methods 
@@ -94,54 +91,54 @@ Modular Programming
 🔐 Encoding Process (Hiding Data)
 -----------------------------------------------------------------------------------------------------------------------------------------
 
-Read the BMP image
+-> Read the BMP image
 
-Copy the BMP header (first 54 bytes)
+-> Copy the BMP header (first 54 bytes)
 
-Read the secret file
+-> Read the secret file
 
-Embed metadata:
+-> Embed metadata:
 
-Magic string (#*)
+     Magic string (#*)
 
-Secret file extension
+     Secret file extension
 
-Secret file size
+     Secret file size
 
-Convert secret data into bits
+-> Convert secret data into bits
 
-Replace the least significant bit of each image byte with secret bits
+-> Replace the least significant bit of each image byte with secret bits
 
-Save the modified image as a new BMP file
+-> Save the modified image as a new BMP file
 
 🔍 Decoding Process (Extracting Data)
 -----------------------------------------------------------------------------------------------------------------------------------------
-Read the encoded BMP image
+-> Read the encoded BMP image
 
-Check the magic string to confirm hidden data exists
+-> Check the magic string to confirm hidden data exists
 
-Extract the secret file extension
+-> Extract the secret file extension
 
-Extract the secret file size
+-> Extract the secret file size
 
-Extract secret data bit‑by‑bit
+-> Extract secret data bit‑by‑bit
 
-Reconstruct the original secret file
+-> Reconstruct the original secret file
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 💡 Key Insights
 -----------------------------------------------------------------------------------------------------------------------------------------
-Learned how BMP headers and pixel data are structured
+-> Learned how BMP headers and pixel data are structured
 
-Understood binary file reading and writing
+-> Understood binary file reading and writing
 
-Improved bitwise operation skills
+-> Improved bitwise operation skills
 
-Explored real‑world information hiding
+-> Explored real‑world information hiding
 
-Practiced modular programming in C
+-> Practiced modular programming in C
 
-Strengthened debugging and command‑line skills
+-> Strengthened debugging and command‑line skills
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 📦 Output
@@ -160,7 +157,7 @@ output.bmp
 
 🔍 Decoding
 -----------------------------------------------------------------------------------------------------------------------------------------
-Code
+**Code**
 
 $ ./a.out -d output.bmp decode_secret.txt
 
@@ -221,19 +218,19 @@ It shows how steganography can be used for secure and invisible data transmissio
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🔮 Future Work
 -----------------------------------------------------------------------------------------------------------------------------------------
-Support PNG and JPEG formats
+-> Support PNG and JPEG formats
 
-Encrypt secret message before embedding
+-> Encrypt secret message before embedding
 
-Add password protection
+-> Add password protection
 
-Support hiding PDFs, audio, video
+-> Support hiding PDFs, audio, video
 
-Build a GUI
+-> Build a GUI
 
-Improve embedding capacity
+-> Improve embedding capacity
 
-Optimize for larger files
+-> Optimize for larger files
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------
