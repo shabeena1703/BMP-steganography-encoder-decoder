@@ -156,7 +156,7 @@ This project uses:
 -----------------------------------------------------------------------------------------------------------------------------------------
 🔐 Encoding
 -----------------------------------------------------------------------------------------------------------------------------------------
-Code
+**Code**
 
 $ ./a.out -e beautiful.bmp secret.txt output.bmp
 
@@ -185,7 +185,8 @@ My password is Secret ;)
 Clone Repository
 ----------------------------------------------------------------------------------------------------------------------------------------
 **Code**
-git clone https\://github.com/yourusername/steganography.
+
+git clone https://github.com/yourusername/steganography.git
 
 Navigate to Project Folder
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -204,11 +205,9 @@ gcc *.c -o steganography
 or
 
 **Code**
-git clone https\://github.com/yourusername/steganography.
 
-make
+git clone https://github.com/yourusername/steganography.git
 
-Encode
 -----------------------------------------------------------------------------------------------------------------------------------------
 **Code**
 
