@@ -26,7 +26,9 @@ In this project:
 ->The output image is a BMP file that contains the hidden data
 
 The idea is simple:
+
 We take each byte of the image and replace its last bit with the bits of the secret file.
+
 This tiny change does not affect the image visually, but it stores the hidden data safely.
 
 This project helped me understand:
@@ -43,6 +45,7 @@ This project helped me understand:
 🎯 Problem Statement
 -----------------------------------------------------------------------------------------------------------------------------------------
 Sending sensitive information online is risky.
+
 Encryption protects the data, but it also reveals that something secret is being sent.
 
 Steganography solves this problem by hiding the data inside an image, so no one even knows something confidential is present.
@@ -66,23 +69,31 @@ This project uses:
 🛠️ Tools and Technologies Used
 -----------------------------------------------------------------------------------------------------------------------------------------
 -> Programming Language
+
      C
 
 -> Operating System
+
      Linux (Ubuntu)
 
 -> Compiler
+
      GCC
 
 -> Development Tools
+
      VS Code / Vim
 
      Git & GitHub
 
 -> Concepts Used
+
      File Handling
+     
      Bitwise Operations
+     
      BMP Image Processing
+     
      Modular Programming
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -173,38 +184,39 @@ My password is Secret ;)
 -----------------------------------------------------------------------------------------------------------------------------------------
 Clone Repository
 ----------------------------------------------------------------------------------------------------------------------------------------
-Code
-git clone https://github.com/yourusername/steganography.
+**Code**
+git clone https\://github.com/yourusername/steganography.
 
 Navigate to Project Folder
 -----------------------------------------------------------------------------------------------------------------------------------------
 
-Code
+**Code**
 
 cd steganography
 
 Compile
 -----------------------------------------------------------------------------------------------------------------------------------------
 
-Code
+**Code**
 
 gcc *.c -o steganography
 
 or
 
-Code
+**Code**
+git clone https\://github.com/yourusername/steganography.
 
 make
 
 Encode
 -----------------------------------------------------------------------------------------------------------------------------------------
-Code
+**Code**
 
 ./steganography -e input.bmp secret.txt output.bmp
 
 Decode
 -----------------------------------------------------------------------------------------------------------------------------------------
-Code
+**Code**
 
 ./steganography -d output.bmp recovered.txt
 
@@ -213,6 +225,7 @@ Code
 🧪 Result and Conclusion
 -----------------------------------------------------------------------------------------------------------------------------------------
 This project successfully hides confidential data inside a BMP image while keeping the image visually unchanged.
+
 It shows how steganography can be used for secure and invisible data transmission using simple bitwise operations.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
