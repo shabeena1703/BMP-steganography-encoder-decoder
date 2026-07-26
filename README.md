@@ -1,4 +1,4 @@
-BMP Steganography Encoder Decoder
+BMP Steganography Encoder/Decoder
 -----------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------
 📝 Brief Summary
@@ -64,6 +64,31 @@ This project uses:
 ->  encoded BMP image (after hiding the data)
 
 -> A decoded output file (after extraction)
+
+------------------------------------------------------------------------------------------------------------------------------------------
+📁 Project Structure
+------------------------------------------------------------------------------------------------------------------------------------------
+├── beautiful.bmp          # Input BMP image (cover image)
+
+├── secret.txt             # Secret file to hide
+
+├── stego.bmp              # Encoded BMP image (output after encoding)
+
+├── decoded_secret.txt     # Output file after decoding
+
+├── common.h               # Common definitions & function declarations
+
+├── encode.c               # Encoding logic (LSB embedding)
+
+├── encode.h               # Encoding function prototypes
+
+├── decode.c               # Decoding logic (LSB extraction)
+
+├── decode.h               # Decoding function prototypes
+
+├── main.c                 # Main menu, argument handling, flow control
+
+└── README.md            
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 🛠️ Tools and Technologies Used
@@ -135,6 +160,41 @@ This project uses:
 -> Extract secret data bit‑by‑bit
 
 -> Reconstruct the original secret file
+
+------------------------------------------------------------------------------------------------------------------------------------------
+🔄  Program Flow
+-----------------------------------------------------------------------------------------------------------------------------------------
+      Start
+
+       ↓
+ 
+User chooses Encode or Decode
+
+       ↓
+ 
+If Encode:
+
+    Read the BMP image
+    
+    Read the secret file
+    
+    Hide the secret file inside the image
+    
+    Save the new image (stego.bmp)
+    
+       ↓
+ 
+If Decode:
+
+    Read the encoded image (stego.bmp)
+    
+    Extract the hidden secret file
+    
+    Save the recovered file (decoded_secret.txt)
+    
+       ↓
+ 
+      End
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 💡 Key Insights
