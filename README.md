@@ -68,25 +68,25 @@ This project uses:
 ------------------------------------------------------------------------------------------------------------------------------------------
 📁 Project Structure
 ------------------------------------------------------------------------------------------------------------------------------------------
-├── beautiful.bmp          # Input BMP image (cover image)
+├── beautiful.bmp          
 
-├── secret.txt             # Secret file to hide
+├── secret.txt             
 
-├── stego.bmp              # Encoded BMP image (output after encoding)
+├── stego.bmp              
 
-├── decoded_secret.txt     # Output file after decoding
+├── decoded_secret.txt     
 
-├── common.h               # Common definitions & function declarations
+├── common.h  
 
-├── encode.c               # Encoding logic (LSB embedding)
+├── encode.c              
 
-├── encode.h               # Encoding function prototypes
+├── encode.h              
 
-├── decode.c               # Decoding logic (LSB extraction)
+├── decode.c               
 
-├── decode.h               # Decoding function prototypes
+├── decode.h               
 
-├── main.c                 # Main menu, argument handling, flow control
+├── main.c                 
 
 └── README.md            
 
@@ -164,13 +164,13 @@ This project uses:
 ------------------------------------------------------------------------------------------------------------------------------------------
 🔄  Program Flow
 -----------------------------------------------------------------------------------------------------------------------------------------
-      Start
+Start
 
-       ↓
+↓
  
 User chooses Encode or Decode
 
-       ↓
+↓
  
 If Encode:
 
@@ -192,9 +192,9 @@ If Decode:
     
     Save the recovered file (decoded_secret.txt)
     
-       ↓
+↓
  
-      End
+End
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 💡 Key Insights
