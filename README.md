@@ -146,7 +146,8 @@ This project uses:
 
 -> Save the modified image as a new BMP file
 
-🔍 **Decoding Process (Extracting Data)
+🔍 **Decoding Process (Extracting Data)**
+
 -> Read the encoded BMP image
 
 -> Check the magic string to confirm hidden data exists
@@ -278,7 +279,23 @@ Code
      ./steganography -d output.bmp recovered.txt
 
 ----------------------------------------------------------------------------------------------------------------------------------------
+⚠️ Challenges Faced
+-----------------------------------------------------------------------------------------------------------------------------------------
+-> Understanding how BMP headers and pixel data are stored
 
+-> Handling binary file operations without corrupting the image
+
+-> Implementing bitwise operations correctly for LSB manipulation
+
+-> Ensuring the encoded image looks exactly the same as the original
+
+-> Managing file sizes (secret file must fit inside the image)
+
+-> Extracting the hidden message without losing any data
+
+-> Debugging pointer issues and modularizing the code cleanly
+
+-----------------------------------------------------------------------------------------------------------------------------------------
 🧪 Result and Conclusion
 -----------------------------------------------------------------------------------------------------------------------------------------
 This project successfully hides confidential data inside a BMP image while keeping the image visually unchanged.
