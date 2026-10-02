@@ -323,7 +323,7 @@ It shows how steganography can be used for secure and invisible data transmissio
 
 👤 Author & Contact
 -----------------------------------------------------------------------------------------------------------------------------------------
-Shaik Shabeena  
+Shaik Shabeena
 
 Electronics and Communication Engineering
 
